@@ -25,6 +25,10 @@ public class DateTime {
     public DateTime() {
         time = new Date();
     }
+    
+    public DateTime(int year, int month, int day) {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
 
     public boolean after(DateTime when) {
         return time.after(when.getTime());
