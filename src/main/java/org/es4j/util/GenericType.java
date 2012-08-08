@@ -60,7 +60,7 @@ import java.util.Stack;
  * For example:
  * </p>
  * <pre>
- *  GenericType&lt;List&lt;String&gt;&gt; stringListType = new GenericType&lt;List&lt;String&gt;&gt;() {};
+ *  GenericType<List<String>> stringListType = new GenericType<List<String>>() {};
  * </pre>
  * <p>
  * Or:
