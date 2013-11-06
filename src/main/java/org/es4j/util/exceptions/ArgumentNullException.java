@@ -1,4 +1,4 @@
-package org.es4j.exceptions;
+package org.es4j.util.exceptions;
 
 import java.text.MessageFormat;
 
@@ -9,7 +9,7 @@ import java.text.MessageFormat;
  * is accidentally accessed. This exception is introduced to fill the gap and to
  * be more explicit in the case of a illegal null reference argument,
  */
-public class ArgumentNullException extends IllegalArgumentException {
+public class ArgumentNullException extends RuntimeException/*IllegalArgumentException*/ {
 
     public ArgumentNullException(String argument) {
         super(MessageFormat.format("The argument {0} was null.", argument));

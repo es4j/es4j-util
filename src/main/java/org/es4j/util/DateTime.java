@@ -6,6 +6,7 @@ import java.util.GregorianCalendar;
 
 
 public class DateTime {
+    public static DateTime UtcNow;
     private final Date time;
 
     public static DateTime utcNow() {

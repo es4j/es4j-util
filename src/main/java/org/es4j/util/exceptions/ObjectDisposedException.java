@@ -1,4 +1,4 @@
-package org.es4j.exceptions;
+package org.es4j.util.exceptions;
 
 
 public class ObjectDisposedException extends RuntimeException {

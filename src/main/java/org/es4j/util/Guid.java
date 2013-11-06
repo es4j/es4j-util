@@ -79,9 +79,15 @@ public final class Guid implements Serializable, Comparable<Guid> {
      * Explicit serialVersionUID for interoperability.
      */
     private static final long serialVersionUID = -4856846361193249489L;
+    
+    public static final Guid Empty = empty;
 
     public static Guid empty() {
-        throw new UnsupportedOperationException("Not yet implemented");
+        return Guid.fromString("00000000-0000-0000-0000-000000000000");
+    }
+
+    public static Guid NewGuid() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /*
@@ -458,7 +464,7 @@ public final class Guid implements Serializable, Comparable<Guid> {
                    0))));
     }
 
-    public int[] toByteArray() {
+    public byte[] toByteArray() {
         throw new UnsupportedOperationException("Not yet implemented");
     }
 }

@@ -1,7 +1,7 @@
-package org.es4j.exceptions;
+package org.es4j.util.exceptions;
 
 
-public class ArgumentException extends IllegalArgumentException {
+public class ArgumentException extends RuntimeException/*IllegalArgumentException*/ {
 
     public ArgumentException(String typeMustBeInterface, String instance) {
     }
